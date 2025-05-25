@@ -5,3 +5,4 @@ if(num%%2==0){
 }else{
   cat("The given number is odd.")
 }
+4

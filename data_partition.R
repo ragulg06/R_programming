@@ -15,6 +15,7 @@ test_data = iris[-train_index,]
 model = naiveBayes(Species ~ ., data = train_data)
 predictions = predict(model, test_data)
 
-conf_matrix = confustionMatrix(predictions, test_data$Species)
-Print(conf_matrix)
+conf_matrix = confusionMatrix(predictions, test_data$Species)
+print(conf_matrix)
 cat("Accuracy:, ", conf_matrix$overall['Accuracy'])
+
